@@ -21,8 +21,11 @@ def output_marks(marks):
     name = input('Print name: ')
     surname = input('Print surname: ')
     all_name = name +'_'+ surname
-    n = Classmates('{k}'.format(k = all_name), '{f}'.format(f = marks))
-    return n.marks
+    with open("data_file.json", "w") as write_file:
+        json.dump(all_name, marks)
+    with open("data_file.json", "r") as read_file:
+        data = json.load(read_file)
+    return data
 
 while runner == 1:
     ans = int(input('If you want to read marks press 1 or 2 for write them''\n'))
@@ -37,3 +40,4 @@ while runner == 1:
         print('What? I dont understand you...Reprint please')
         ans = int(input('If you want to read marks press 1 or 2 for write them''\n'))
         runner = int(input('if you want to continue press 1 if no press 0: '))
+
