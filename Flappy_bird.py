@@ -1,3 +1,5 @@
+#Also you will need to download some voices: die, swoosh, hit, point, wing.
+#And pics:0,1,2,3,4,5,6,7,8,9, backgrnd,base,bird,message'Get ready' and pipe
 import random # For generating random numbers
 import sys # We will use sys.exit to exit the program
 import pygame
