@@ -1,4 +1,4 @@
-import smtpli# import necessary packages
+
  
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
